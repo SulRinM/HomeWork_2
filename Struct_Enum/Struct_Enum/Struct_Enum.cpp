@@ -1,7 +1,7 @@
 ﻿
 #include <iostream>
 
-enum class Month {
+enum Month {
     January = 1,
     February,
     March,
@@ -27,29 +27,29 @@ int main()
         std::cin >> m;
         switch (m)
         {
-        case (static_cast<int>(Month::January)) : std::cout << "Январь" << std::endl;
+        case Month::January : std::cout << "Январь" << std::endl;
             break;
-        case (static_cast<int>(Month::February)): std::cout << "Февраль" << std::endl;
+        case Month::February: std::cout << "Февраль" << std::endl;
             break;
-        case (static_cast<int>(Month::March)): std::cout << "Март" << std::endl;
+        case Month::March: std::cout << "Март" << std::endl;
             break;
-        case (static_cast<int>(Month::April)): std::cout << "Апрель" << std::endl;
+        case Month::April: std::cout << "Апрель" << std::endl;
             break;
-        case (static_cast<int>(Month::May)): std::cout << "Май" << std::endl;
+        case Month::May: std::cout << "Май" << std::endl;
             break;
-        case (static_cast<int>(Month::June)): std::cout << "Июнь" << std::endl;
+        case Month::June: std::cout << "Июнь" << std::endl;
             break;
-        case (static_cast<int>(Month::July)): std::cout << "Июль" << std::endl;
+        case Month::July: std::cout << "Июль" << std::endl;
             break;
-        case (static_cast<int>(Month::August)): std::cout << "Август" << std::endl;
+        case Month::August: std::cout << "Август" << std::endl;
             break;
-        case (static_cast<int>(Month::September)): std::cout << "Сентябрь" << std::endl;
+        case Month::September: std::cout << "Сентябрь" << std::endl;
             break;
-        case (static_cast<int>(Month::October)): std::cout << "Октябрь" << std::endl;
+        case Month::October: std::cout << "Октябрь" << std::endl;
             break;
-        case (static_cast<int>(Month::November)): std::cout << "Ноябрь" << std::endl;
+        case Month::November: std::cout << "Ноябрь" << std::endl;
             break;
-        case (static_cast<int>(Month::December)): std::cout << "Декабрь" << std::endl;
+        case Month::December: std::cout << "Декабрь" << std::endl;
             break;
         default: 
             if (m > 0) {

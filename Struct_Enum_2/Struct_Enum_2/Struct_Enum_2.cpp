@@ -8,14 +8,16 @@ struct bank_account {
 };
 
 void funcPointer(bank_account *p) {
-
+    std::cout << "Введите номер счета: ";
+    std::cin >> p->number;
     std::cout << "Введите новый баланс: ";
     std::cin >> p->balance;
     std::cout << "Ваш счёт: " << p->name << ", " << p->number << ", " << p->balance << std::endl;
 }
 
 void funcLink(bank_account &p) {
-
+    std::cout << "Введите номер счета: ";
+    std::cin >> p.number;
     std::cout << "Введите новый баланс: ";
     std::cin >> p.balance;
     std::cout << "Ваш счёт: " << p.name << ", " << p.number << ", " << p.balance << std::endl;
