@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <locale.h>
 
 struct Addres {
@@ -11,12 +11,12 @@ struct Addres {
 };
 
 void func(Addres addr) {
-    std::cout << "Ñòðàíà: " << addr.country << std::endl;
-    std::cout << "Ãîðîä: " << addr.city << std::endl;
-    std::cout << "Óëèöà: " << addr.street << std::endl;
-    std::cout << "Íîìåð äîìà: " << addr.house_number << std::endl;
-    std::cout << "Íîìåð êâàðòèðû: " << addr.apartment_number << std::endl;
-    std::cout << "Èíäåêñ: " << addr.index << std::endl;
+    std::cout << "Ð¡Ñ‚Ñ€Ð°Ð½Ð°: " << addr.country << std::endl;
+    std::cout << "Ð“Ð¾Ñ€Ð¾Ð´: " << addr.city << std::endl;
+    std::cout << "Ð£Ð»Ð¸Ñ†Ð°: " << addr.street << std::endl;
+    std::cout << "ÐÐ¾Ð¼ÐµÑ€ Ð´Ð¾Ð¼Ð°: " << addr.house_number << std::endl;
+    std::cout << "ÐÐ¾Ð¼ÐµÑ€ ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€Ñ‹: " << addr.apartment_number << std::endl;
+    std::cout << "Ð˜Ð½Ð´ÐµÐºÑ: " << addr.index << std::endl;
     std::cout << std::endl;
 }
 
@@ -26,17 +26,17 @@ int main()
     system("chcp 1251");
 
     Addres addres;
-    addres.country = "Ðîññèÿ";
-    addres.city = "Ñàíêò-Ïåòåðáóðã";
-    addres.street = "Íèêîëàÿ Ðóáöîâà";
+    addres.country = "Ð Ð¾ÑÑÐ¸Ñ";
+    addres.city = "Ð¡Ð°Ð½ÐºÑ‚-ÐŸÐµÑ‚ÐµÑ€Ð±ÑƒÑ€Ð³";
+    addres.street = "ÐÐ¸ÐºÐ¾Ð»Ð°Ñ Ð ÑƒÐ±Ñ†Ð¾Ð²Ð°";
     addres.house_number = 8;
     addres.apartment_number = 15;
     addres.index = 192000;
 
     Addres _addres;
-    _addres.country = "Ðîññèÿ";
-    _addres.city = "×åëÿáèíñê";
-    _addres.street = "Ãåðîåâ Òàíêîãðàäà";
+    _addres.country = "Ð Ð¾ÑÑÐ¸Ñ";
+    _addres.city = "Ð§ÐµÐ»ÑÐ±Ð¸Ð½ÑÐº";
+    _addres.street = "Ð“ÐµÑ€Ð¾ÐµÐ² Ð¢Ð°Ð½ÐºÐ¾Ð³Ñ€Ð°Ð´Ð°";
     _addres.house_number = 20;
     _addres.apartment_number = 40;
     _addres.index = 194000;

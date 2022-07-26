@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <locale.h>
 
 struct bank_account {
@@ -9,16 +9,16 @@ struct bank_account {
 
 void funcPointer(bank_account *p) {
 
-    std::cout << "Ââåäèòå íîâûé áàëàíñ: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð±Ð°Ð»Ð°Ð½Ñ: ";
     std::cin >> p->balance;
-    std::cout << "Âàø ñ÷¸ò: " << p->name << ", " << p->number << ", " << p->balance << std::endl;
+    std::cout << "Ð’Ð°Ñˆ ÑÑ‡Ñ‘Ñ‚: " << p->name << ", " << p->number << ", " << p->balance << std::endl;
 }
 
 void funcLink(bank_account &p) {
 
-    std::cout << "Ââåäèòå íîâûé áàëàíñ: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð±Ð°Ð»Ð°Ð½Ñ: ";
     std::cin >> p.balance;
-    std::cout << "Âàø ñ÷¸ò: " << p.name << ", " << p.number << ", " << p.balance << std::endl;
+    std::cout << "Ð’Ð°Ñˆ ÑÑ‡Ñ‘Ñ‚: " << p.name << ", " << p.number << ", " << p.balance << std::endl;
 }
 
 int main()
@@ -27,16 +27,16 @@ int main()
     system("chcp 1251");
 
     bank_account b;
-    std::cout << "Ââåäèòå íîìåð ñ÷¸òà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‡Ñ‘Ñ‚Ð°: ";
     std::cin >> b.number;
-    std::cout << "Ââåäèòå èìÿ âëàäåëüöà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð°: ";
     std::cin >> b.name;
-    std::cout << "Ââåäèòå áàëàíñ: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð±Ð°Ð»Ð°Ð½Ñ: ";
     std::cin >> b.balance;
 
-    std::cout << "×åðåç óêàçàòåëü" << std::endl;
+    std::cout << "Ð§ÐµÑ€ÐµÐ· ÑƒÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ" << std::endl;
     funcPointer(&b);
-    std::cout << "×åðåç ññûëêó" << std::endl;
+    std::cout << "Ð§ÐµÑ€ÐµÐ· ÑÑÑ‹Ð»ÐºÑƒ" << std::endl;
     funcLink(b);
 
     return 0;
