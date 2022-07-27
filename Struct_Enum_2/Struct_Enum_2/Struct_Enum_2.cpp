@@ -7,7 +7,7 @@ struct bank_account {
     double balance;
 };
 
-void funcPointer(bank_account *p) {
+void funcPointer(bank_account) {
     std::cout << "Введите номер счета: ";
     std::cin >> p->number;
     std::cout << "Введите новый баланс: ";
