@@ -1,7 +1,7 @@
 ﻿
 #include <iostream>
 
-enum Month {
+enum class Month {
     January = 1,
     February,
     March,
@@ -19,7 +19,7 @@ enum Month {
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    Month month = Month::January;
+    Month month = static_cast<Month>(1);
     int m = 1;
 
     while (m != 0) {
@@ -27,29 +27,29 @@ int main()
         std::cin >> m;
         switch (m)
         {
-        case Month::January : std::cout << "Январь" << std::endl;
+        case 1 : std::cout << "Январь" << std::endl;
             break;
-        case Month::February: std::cout << "Февраль" << std::endl;
+        case 2: std::cout << "Февраль" << std::endl;
             break;
-        case Month::March: std::cout << "Март" << std::endl;
+        case 3: std::cout << "Март" << std::endl;
             break;
-        case Month::April: std::cout << "Апрель" << std::endl;
+        case 4: std::cout << "Апрель" << std::endl;
             break;
-        case Month::May: std::cout << "Май" << std::endl;
+        case 5: std::cout << "Май" << std::endl;
             break;
-        case Month::June: std::cout << "Июнь" << std::endl;
+        case 6: std::cout << "Июнь" << std::endl;
             break;
-        case Month::July: std::cout << "Июль" << std::endl;
+        case 7: std::cout << "Июль" << std::endl;
             break;
-        case Month::August: std::cout << "Август" << std::endl;
+        case 8: std::cout << "Август" << std::endl;
             break;
-        case Month::September: std::cout << "Сентябрь" << std::endl;
+        case 9: std::cout << "Сентябрь" << std::endl;
             break;
-        case Month::October: std::cout << "Октябрь" << std::endl;
+        case 10: std::cout << "Октябрь" << std::endl;
             break;
-        case Month::November: std::cout << "Ноябрь" << std::endl;
+        case 11: std::cout << "Ноябрь" << std::endl;
             break;
-        case Month::December: std::cout << "Декабрь" << std::endl;
+        case 12: std::cout << "Декабрь" << std::endl;
             break;
         default: 
             if (m > 0) {
