@@ -19,37 +19,39 @@ enum class Month {
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    Month month = static_cast<Month>(1);
+    Month month = Month::January;
     int m = 1;
-
+    
     while (m != 0) {
         std::cout << "Введите номер месяца: ";
         std::cin >> m;
-        switch (m)
+        month = static_cast<Month>(m);
+
+        switch (month)
         {
-        case 1 : std::cout << "Январь" << std::endl;
+        case Month::January:  std::cout << "Январь" << std::endl;
             break;
-        case 2: std::cout << "Февраль" << std::endl;
+        case Month::February: std::cout << "Февраль" << std::endl;
             break;
-        case 3: std::cout << "Март" << std::endl;
+        case Month::March: std::cout << "Март" << std::endl;
             break;
-        case 4: std::cout << "Апрель" << std::endl;
+        case Month::April: std::cout << "Апрель" << std::endl;
             break;
-        case 5: std::cout << "Май" << std::endl;
+        case Month::May: std::cout << "Май" << std::endl;
             break;
-        case 6: std::cout << "Июнь" << std::endl;
+        case Month::June: std::cout << "Июнь" << std::endl;
             break;
-        case 7: std::cout << "Июль" << std::endl;
+        case Month::July: std::cout << "Июль" << std::endl;
             break;
-        case 8: std::cout << "Август" << std::endl;
+        case Month::August: std::cout << "Август" << std::endl;
             break;
-        case 9: std::cout << "Сентябрь" << std::endl;
+        case Month::September: std::cout << "Сентябрь" << std::endl;
             break;
-        case 10: std::cout << "Октябрь" << std::endl;
+        case Month::October: std::cout << "Октябрь" << std::endl;
             break;
-        case 11: std::cout << "Ноябрь" << std::endl;
+        case Month::November: std::cout << "Ноябрь" << std::endl;
             break;
-        case 12: std::cout << "Декабрь" << std::endl;
+        case Month::December: std::cout << "Декабрь" << std::endl;
             break;
         default: 
             if (m > 0) {
