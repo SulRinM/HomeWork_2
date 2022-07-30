@@ -13,22 +13,28 @@ enum class Month {
     September,
     October,
     November,
-    December
+    December = 12
 };
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    Month month = static_cast<Month>(1);
     int m = 1;
-
       
     while (m != 0) {
         std::cout << "Введите номер месяца: ";
         std::cin >> m;
-   
-        
-        
+        if (m <= 0) {
+           std::cout << "До свидания" << std::endl;
+           break;
+        }
+        if (m > 12) {
+            std::cout << "Неправильный номер!" << std::endl;
+            break;
+        }
+
+        Month month = static_cast<Month>(m);
+
         switch (month)
         {
         case Month::January:  std::cout << "Январь" << std::endl;
@@ -55,15 +61,10 @@ int main()
             break;
         case Month::December: std::cout << "Декабрь" << std::endl;
             break;
-        default: 
-            if (m > 0) {
-                std::cout << "Неправильный номер!" << std::endl;
-            }
-            else std::cout << "До свидания" << std::endl;
-            break;
         }
     }
     
     return 0;
 }
+
 
