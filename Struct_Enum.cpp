@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 enum class Month {
@@ -30,10 +29,11 @@ int main()
         }
         if (m > 12) {
             std::cout << "Неправильный номер!" << std::endl;
-            break;
         }
 
-        Month month = static_cast<Month>(m);
+        if(m > 0 && m < 13)
+        {
+            Month month = static_cast<Month>(m);
 
         switch (month)
         {
@@ -62,9 +62,9 @@ int main()
         case Month::December: std::cout << "Декабрь" << std::endl;
             break;
         }
+        }
+        
     }
     
     return 0;
 }
-
-
