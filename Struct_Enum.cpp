@@ -23,11 +23,11 @@ int main()
     while (m != 0) {
         std::cout << "Введите номер месяца: ";
         std::cin >> m;
-        if (m <= 0) {
+        if (m == 0) {
            std::cout << "До свидания" << std::endl;
            break;
         }
-        if (m > 12) {
+        if (m > 12 || m < 0) {
             std::cout << "Неправильный номер!" << std::endl;
         }
 
